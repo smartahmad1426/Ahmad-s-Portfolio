@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Assets | Muhammad Ahmad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --beige: #FDFBF7; --skin: #E5C3A6; --brown-dark: #3E2723; --brown-med: #A67B5B; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--beige); color: var(--brown-dark); padding-top: 100px; }
+        .navbar { background-color: rgba(253, 251, 247, 0.95); border-bottom: 1px solid var(--skin); }
+        .nav-link { color: var(--brown-dark) !important; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; margin: 0 15px; }
+        .nav-link.active { color: var(--brown-med) !important; }
+        
+        /* Intro Section Styling */
+        .intro-text { max-width: 800px; margin: 0 auto 50px auto; line-height: 1.8; color: #5D4037; }
+
+        /* Video/Thumbnail Box */
+        .video-box { 
+            background: #000; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            height: 350px; 
+            border: 5px solid var(--skin); 
+            position: relative; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-box img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: 0.3s; }
+        .video-box:hover img { opacity: 1; transform: scale(1.05); }
+        .play-btn { position: absolute; font-size: 50px; color: white; text-decoration: none; background: rgba(0,0,0,0.5); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border: 2px solid white; }
+
+        .channel-row { 
+            background: white; border-radius: 20px; margin-bottom: 40px; padding: 35px; 
+            border-left: 8px solid var(--brown-med); box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+        .btn-view { 
+            background-color: var(--brown-dark); color: white; padding: 12px 30px; 
+            border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px; font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Brief</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="assets.html">Digital Assets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="impact.html">Global Impact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proposal.html">Strategic Proposal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mb-5">
+        <h2 class="text-center mt-5 mb-3 fw-bold">YOUTUBE NETWORK</h2>
+        
+        <!-- Added Text Paragraph -->
+        <div class="intro-text text-center">
+            <p class="lead">
+                Currently, we are managing and scaling a diverse portfolio of over <strong>20 YouTube channels</strong> across multiple high-traffic niches. Our network generates millions of views by leveraging advanced content automation, cinematic editing, and strategic audience retention techniques. While we operate a vast ecosystem, the three channels highlighted below represent our core pillars: <strong>Cinematic Storytelling, Industrial Innovation, and High-Energy Sports Media.</strong>
+            </p>
+        </div>
+        
+        <!-- Channel 1: Monar.14 -->
+        <div class="row channel-row align-items-center">
+            <div class="col-lg-7">
+                <h3>Monar.14</h3>
+                <p>A flagship channel specializing in high-end cinematic visuals and trend-based storytelling.</p>
+                <a href="https://youtube.com/@monar.14" target="_blank" class="btn-view">Visit Channel</a>
+            </div>
+            <div class="col-lg-5">
+                <a href="https://www.youtube.com/shorts/_Cj5uCAP_7c" target="_blank" class="video-box mt-3 mt-lg-0">
+                    <img src="https://img.youtube.com/vi/_Cj5uCAP_7c/maxresdefault.jpg" alt="Video Thumbnail">
+                    <span class="play-btn">▶</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Channel 2: FlowBuilding -->
+        <div class="row channel-row align-items-center">
+            <div class="col-lg-7">
+                <h3>FlowBuilding</h3>
+                <p>Dedicated to construction and design niches, utilizing automated workflows.</p>
+                <a href="https://youtube.com/@flowbuilding" target="_blank" class="btn-view">Visit Channel</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="video-box mt-3 mt-lg-0">
+                    <iframe src="https://www.youtube.com/embed/88RPsEe87co" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Channel 3: Footgits -->
+        <div class="row channel-row align-items-center">
+            <div class="col-lg-7">
+                <h3>Footgits</h3>
+                <p>A fast-paced sports automation channel that leverages trending football moments.</p>
+                <a href="https://youtube.com/@footgits" target="_blank" class="btn-view">Visit Channel</a>
+            </div>
+            <div class="col-lg-5">
+                <a href="https://www.youtube.com/shorts/8Fuss_WjdnQ" target="_blank" class="video-box mt-3 mt-lg-0">
+                    <img src="https://img.youtube.com/vi/8Fuss_WjdnQ/maxresdefault.jpg" alt="Video Thumbnail">
+                    <span class="play-btn">▶</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
