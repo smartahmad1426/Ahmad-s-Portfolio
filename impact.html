@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
     <title>Global Impact | Muhammad Ahmad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root { --beige: #FDFBF7; --skin: #E5C3A6; --brown-dark: #3E2723; --brown-med: #A67B5B; }
-        body { font-family: 'Poppins', sans-serif; background-color: var(--beige); color: var(--brown-dark); padding-top: 100px; }
-        .navbar { background-color: rgba(253, 251, 247, 0.95); border-bottom: 1px solid var(--skin); }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--beige); color: var(--brown-dark); padding-top: 100px; width: 1200px; margin: 0 auto; overflow-x: auto; }
+        .container { width: 1200px !important; max-width: none !important; }
+        .navbar { background-color: rgba(253, 251, 247, 0.95); width: 1200px; left: 50%; transform: translateX(-50%); border-bottom: 1px solid var(--skin); }
+        .navbar-nav { flex-direction: row !important; }
         .nav-link { color: var(--brown-dark) !important; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; margin: 0 15px; }
         .nav-link.active { color: var(--brown-med) !important; }
+        .row { display: flex !important; flex-wrap: nowrap !important; }
         .impact-card { background: white; padding: 40px; border-radius: 20px; border: 1px solid var(--skin); margin-bottom: 30px; }
+        .col-md-7 { width: 58.33% !important; flex: 0 0 auto; }
+        .col-md-5 { width: 41.66% !important; flex: 0 0 auto; }
+        .col-md-4 { width: 33.333% !important; flex: 0 0 auto; }
         .victory-media { width: 100%; border-radius: 10px; border: 3px solid var(--skin); margin-top: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container">
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Brief</a></li>
-                    <li class="nav-item"><a class="nav-link" href="assets.html">Digital Assets</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="impact.html">Global Impact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="proposal.html">Strategic Proposal</a></li>
-                </ul>
-            </div>
+        <div class="container justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Brief</a></li>
+                <li class="nav-item"><a class="nav-link" href="assets.html">Digital Assets</a></li>
+                <li class="nav-item"><a class="nav-link active" href="impact.html">Global Impact</a></li>
+                <li class="nav-item"><a class="nav-link" href="proposal.html">Strategic Proposal</a></li>
+            </ul>
         </div>
     </nav>
     <div class="container my-5">
         <h2 class="text-center display-5 fw-bold mb-5">Global Reach & Victories</h2>
-        
         <div class="impact-card">
             <div class="row align-items-center">
                 <div class="col-md-7">
@@ -40,10 +43,7 @@
                 </div>
                 <div class="col-md-5">
                     <h5 class="text-center">Victory Highlights</h5>
-                    <!-- Image Path Check -->
                     <img src="image/videos/2.jpg" class="victory-media mb-3" alt="Victory Award Picture">
-                    
-                    <!-- Video Path Fixed -->
                     <video class="victory-media" controls>
                         <source src="image/videos/v1_copy.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -51,9 +51,8 @@
                 </div>
             </div>
         </div>
-
         <div class="row g-4 mt-2">
-            <div class="col-md-4 text-center"><div class="p-4" style="background:var(--skin); border-radius:15px;"><h2 class="fw-bold">50M+</h2><p class="mb-0">Total Views</p></div></div>
+            <div class="col-md-4 text-center"><div class="p-4" style="background:var(--skin); border-radius:15px;"><h2 class="fw-bold">1000M+</h2><p class="mb-0">Total Views</p></div></div>
             <div class="col-md-4 text-center"><div class="p-4" style="background:var(--brown-med); color:white; border-radius:15px;"><h2 class="fw-bold">20+</h2><p class="mb-0">Monetized Channels</p></div></div>
             <div class="col-md-4 text-center"><div class="p-4" style="background:var(--skin); border-radius:15px;"><h2 class="fw-bold">3+</h2><p class="mb-0">Global Markets</p></div></div>
         </div>
